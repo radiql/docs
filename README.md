@@ -20,3 +20,5 @@ with a form building tool to provide rapid development of data processing
 and enterprise integration. GraphQL is used to provide boundary interfaces
 for browser-based forms and native form apps.
 
+RADiQL is designed for easy deployment into a cloud using Docker, Kubernetes 
+and a distributed data centre operating system such as Mesosphere DC/OS.
