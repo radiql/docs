@@ -21,7 +21,7 @@ include a declarative specification for how that data may be validated.
 On the other hand, Use Cases and User Stories define the **behaviour** 
 of the system when receiving, processing or creating Data Entities. 
 
-The pure programmatic business logic of a Use Case or Use Story is described 
+The pure programmatic business logic of a Use Case or User Story is described 
 by an **Interactor**. Interactors implement the behaviour of the pure 
 business logic (and nothing more).
 
@@ -48,7 +48,7 @@ both unit testing (where Interactors are tested individually) and
 Integration testing (where Interactors are assembled into networks of
 interconnected Interactors).
 
-Furthermore, the implementation technology of one or Interactors may
+Furthermore, the implementation technology of one or more Interactors may
 be changed entirely (from Java to Rust, let's say, or from JavaScript 
 to Golang) without any need to rewrite the test code for the essential
 business logic of the system. Indeed it's very straightforward to combine
