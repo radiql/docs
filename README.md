@@ -68,7 +68,7 @@ The thrust of Clean Architecture is to focus on development of the core
 business logic and data that, between them, provide the fundamental value 
 of a system. Clean Architecture when followed through to its logical conclusion
 eliminates the dependency of this core system (the pure data and pure business 
-logic behaviour) on technologies user interface libraries and database 
+logic behaviour) on specific technologies, user interface libraries and database 
 selection. 
 
 With Clean Architecture, components such as the database and graphical user 
@@ -84,7 +84,7 @@ connected by the application designer using message-based channels where
 output port of the sending Interactor uses exactly the same message type as 
 the input port of the receiving Interactor.
 
-This means, in effect that both Interactors are forced to implement their
+This means, in effect, that both Interactors are forced to implement their
 interfaces by referencing a common message data type, thereby guaranteeing
 their compatibility. This makes it easy to "wire up" Interactor components.
 
