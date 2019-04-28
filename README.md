@@ -109,9 +109,10 @@ remote process in a different address space (a different executable binary not
 necessarily running on the same physical computer, in the same data centre, 
 on the same continent or even on the same planet).
 
-RADiQL CA supports all of these features. This permits and prompotes rapid 
+RADiQL CA supports all of these features. This permits and promotes rapid 
 prototyping and evolution of production-quality FBP components as part of a 
-Rapid Application Development (or Joint Application Development) process.
+Rapid Application Development (RAD) or Joint Application Development(JAD)
+process.
 
 # Programming Automation
 
@@ -119,8 +120,8 @@ Although not a prerequisite, RADiQL is compatible with template-based
 code generation features of programming languages such as Go (Golang). Indeed,
 as is the case with Go (at least version 1.x) where there is no support for
 Generics, go:generate is the usual means of achieving the same end. In other
-words using Generic templates to provide support for Generic data structures
-to hold new application-specific data types.
+words using Generic templates to implement application type-specific data structures
+that exibit Generic data structure properties and behaviour.
 
 Although many may frown on "code generation" in practice it's used everywhere
 under the covers, from generation of gRPC service and message stubs to 
@@ -144,11 +145,14 @@ the same benefits and drawbacks.
 Code Generation should be seen as a productivity-enhancing automation step
 for highly-repetitive and well-understood programming tasks. It's robotic
 execution of well-defined tasks, in exactly the same way that a robot 
-will spot-weld the body panels of a vehicle in an automobile factory.
+will spot-weld the body panels of a vehicle in an automobile factory. When used
+appropriately, it produces a higher quality result that's far cheaper and faster
+than hand-coding.
 
 RADiQL does not currently use code generation to define Entity Data types
-nor custom Interactors. However, AppStratum's own implemention of RADiQL (called
-Harmony) does automatically generate (and if necessary remove the same) 
+nor application-specific Interactors. However, AppStratum's own implemention 
+of RADiQL (called
+Harmony) does automatically generate (and if necessary remove) 
 code for Composite Interactors in response to design choices made by a 
 human software designer. This level of automation greatly reduces the 
 amount of work that is required to develop and test software built
@@ -159,7 +163,7 @@ and Artificial Intelligence (AI) to augment productivity of software designers
 and software developers and to optimise and adaptively tune the performance of
 software sytems built with RADiQL.
 
-# The Practical Benefits of RADiQL
+# Summary of the Benefits of RADiQL
 
 RADiQL provides a toolset that promotes rapid development of functionally
 complete production quality software systems with the following characteristics:
