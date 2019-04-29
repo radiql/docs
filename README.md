@@ -142,6 +142,53 @@ prototyping and evolution of production-quality FBP components as part of a
 Rapid Application Development (RAD) or Joint Application Development(JAD)
 process.
 
+# Graphical and Visual Tools
+
+A key aim of FBP was to enable applications and components to be defined 
+with either a simple FBP configuration file (or set of files) or using a
+diagramming tool to generate such a file. The FBP configuration file would 
+be easy to convert back into graph or a diagram. The FBP application would,
+therefore, be self-documenting.
+
+Many developers are suspicious of visual tools because they are perceived to
+"mask" what the code is doing. Developers often want to see an underlying
+text file "in the flesh". Now this sort of skepticism about visual tools is
+understandable in conventional programming because certain ideas can in many
+cases be expressed very concisely in mathematical notation or in code in
+a suitable programming language. However, with Flow-based Programming this
+skepticism is somewhat misplaced.
+
+FBP permits developers to flip between a visual graphical view of an application
+and code, depending on which view of the system is more natural and thus, more
+productive.
+
+## Creating components with a text editor
+
+RADiQL encourages the use of a text editor when writing an application-specific
+Interactor in a suitable programming language. The suitability of the language 
+will depend on the context or purpose of the Interactor in question. However, 
+Interactor implementations should be small, easily understood and re-usable 
+wherever possible.
+
+Interactors have well-defined input and output interfaces and can, therefore, 
+easily be turned into a self-documenting component that can be configured, 
+manipulated and assembled into an application or another higher level 
+component. 
+
+The original developer of a custom application-specific component will write
+the component using a conventional programming language such as JavaScript, 
+Rust, Go, Java or Kotlin. However, another developer may use incorporate this
+component into another application using a visual tool. A business analyst may
+adjust configuration parameters of such a component without need to reference
+the original developer's code at all. 
+
+RADiQL makes it easy to reuse components and to combine or re-combine them 
+in different ways with a visual tool or a text editor. For the most part, though
+the visual tool is more convenient when assembling applications our of 
+existing Interactor components because it includes built in support for checking
+the compatibility of interfaces, automatically running unit and integration tests
+and developing test scripts.
+
 # Programming Automation
 
 Although not a prerequisite, RADiQL is compatible with template-based 
