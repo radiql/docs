@@ -8,10 +8,19 @@ Flow-based Programming (J. Paul Morrison) and Clean Architecture
 (Robert C. Martin).
 
 RADiQL enables and promotes an ultra-agile approach to software 
-development by focussing on the Data Entities in the system and
-the User Stories (or Use Cases) that manipulate data. 
+development by focussing on the essencial value delivered by a software
+system. Namely:
+
+- The Data Entities used by the system
+- The User Stories (or Use Cases) that manipulate Data Entities
+
 Data Entities and User Stories/Use Cases are treated as the 
-first class citizens by RADiQL. 
+first class citizens by RADiQL. Frameworks, boiler-plate code,
+database technologies, messaging technologies and user interface
+technologies are treated as "bolt-on" implementation detail that 
+can abstracted away. There is therefore no direct dependency on
+any underlying framework and therefore far less code to write 
+and test.
 
 ## Pure Data and Pure Business Logic (First Class Citizens)
 
@@ -26,13 +35,15 @@ by an **Interactor**. Interactors implement the behaviour of the pure
 business logic (and nothing more).
 
 Data Entities are passed between Interactors in
-the form of messages. These messages have the same structure as the 
+the form of messages. These messages contain the same structure as the 
 Data Entities themselves. Furthermore, the programatic interfaces of
 each Interactor are defined in terms of those same Data Entities.
 
 Interactors implement the Interactor interface. This has one operation
 named Process(), which takes no input parameters and returns no result.
-Interactors are stateless and in themselves exhibit no side effects.
+Interactors are stateless and in themselves exhibit no side effects. This
+means that Interactors (and thus Use Case or User Story realizations) are
+easily testable.
 
 ## The Practical Fruits of Minimalism
 
@@ -43,7 +54,8 @@ the Interactor via asynchronous channels.
 
 By reducing the implementation of a system to pure data, pure business 
 logic behaviour and streams of messages, tests can be defined by
-data alone, without the need for mocking frameworks. This is true of 
+data alone, without the need for mocking frameworks or for many of the 
+features that come with such frameworks. This is true of 
 both unit testing (where Interactors are tested individually) and
 Integration testing (where Interactors are assembled into networks of
 interconnected Interactors).
@@ -54,6 +66,22 @@ to Golang) without any need to rewrite the test code for the essential
 business logic of the system. Indeed it's very straightforward to combine
 Interactors implemented with different technologies in the same system
 without changing the tests at all.
+
+The fruits of minimalism are business agility and flexibility. Less code
+to write means less code to test. In turn this leads to greater velocity
+of the development team. The team delivers business value more quickly 
+and more precisely. The business value is distilled into a limited number 
+of application-specific Interactors and Data Entity data structures. These
+relationships can be represented graphically. This makes the application 
+far easier to understand, to evolve and to maintain.
+
+It's important to appreciate the value of this minimalist approach. In 
+essence this permits the system to be easy to understand and largely self-
+documenting. Furthermore, the simplicity and rigid structure of Interactors 
+and Data Entity data types lends itself to development of advanced visual 
+tooling and automation of the software development process. This powers a
+leap forward in development productivity and an order of magnitude reduction
+in software development costs.
 
 # RADiQL Clean Architecture (RADiQL CA)
 
