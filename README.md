@@ -18,7 +18,7 @@ Data Entities and User Stories/Use Cases are treated as the
 first class citizens by RADiQL. Frameworks, boiler-plate code,
 database technologies, messaging technologies and user interface
 technologies are treated as "bolt-on" implementation detail that 
-can abstracted away. There is therefore no direct dependency on
+can be abstracted away. There is therefore no direct dependency on
 any underlying framework and therefore far less code to write 
 and test.
 
