@@ -118,7 +118,7 @@ their compatibility. This makes it easy to "wire up" Interactor components.
 
 # Flow-based Programming (FBP) with RADiQL
 
-A defining characteristic of FBP is that it placed data structure of messages
+A defining characteristic of FBP is that it places data structure of messages
 at the heart of the system. FBP is used to wire FBP components together in a
 network of data flows. Data flows are implemented with messages which, in FBP 
 terminology, are referred to as Information Packets (or IPs). IP, in this 
