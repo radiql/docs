@@ -34,7 +34,7 @@ domain-driven lo-code / no-code software through automation based
 upon publically-available ontologies that define domains of interest.
 In other words, much of the data model that a system will use may
 already have been analysed and built by third parties and formalised
-into an ontology. An application or service designer can reused and
+into an ontology. An application or service designer can reuse and
 leverage this knowledge and easily augment it or customise it to create
 software without starting from scratch.
 
@@ -44,14 +44,41 @@ market or area of academic or professional expertise.
 RADiQL can also leverage custom domain models that may or may not 
 reference publically-available ontologies.
 
-Note that Clean Architecture focusses on how best to deliver
-the essential value provided by a system. RADiQL uses ontologies 
+Note that Clean Architecture implicitly focusses on how best to 
+cost-effectivly deliver the essential value provided by a system with
+minimal human resources. RADiQL uses and reuses ontologies 
 and data models to concentrate effort on rapid delivery of essential 
 value without getting lost in the implementation-specific details 
 of programming languages, software architectures, user interface 
 technologies or data-persistence technologies. Essential value
 is a timeless concept, where as the implementation-specific details
 and technologies will change over time.
+
+Ontologies are frequently used in automation. RADiQL uses ontologies
+to automate requirements capture, software specification via user 
+stories, test case specification, documentation and software delivery.
+RADiQL accelarates software delivery by reusing knowledge about 
+domain entities, including actions performed on or by these
+domain entities and the transformations of data that are involved.
+
+RADiQL reuses timeless knowledge about software does and solutions for 
+achieving these goals in order to build reusable software rapidly. 
+RADiQL doesn't obsess about language-specific implementation or 
+frameworks since these languages and frameworks come and go or 
+limit future/backwards compatibility and therefore, by implication, 
+deliver limited lasting and fundamental value. 
+
+In any case
+virtualisation, containerization, service-oriented architecture and
+microservice architectures change how we think about implementing,
+building and integrating software with different programming languages,
+platforms, frameworks and deployment models. More and more we're
+being forced to consider functionality and the data model as more 
+important than the underlyhing implementation technology selected
+to implement software components. RADiQL merely focusses on meeting
+this these new challenges better than traditional tools that, by 
+necessity, require far more human involvement and expense, both in 
+terms of time and money.
 
 ## Pure Data and Pure Business Logic (First Class Citizens)
 
