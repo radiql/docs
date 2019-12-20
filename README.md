@@ -4,23 +4,54 @@ This repository contains the official RADiQL documentation set.
 # About RADiQL and Ultra Agile
 
 RADiQL is a toolset that combines Rapid Application Development with 
-Flow-based Programming (J. Paul Morrison) and Clean Architecture
-(Robert C. Martin).
+Flow-based Programming (J. Paul Morrison), Clean Architecture
+(Robert C. Martin), Domain-driven Design (Eric Evans) and specifically
+Ontology-based Domain-driven Design (Pavel Hruby).
+
+In other words, RADiQL draws together the fruits of decades of 
+knowledge, experience and wisdom in the field of designing complex
+information systems into a conceptual framework that underpins a
+simple, practical, ultra-agile approach to building such systems 
+via user stories and use cases with minimal external dependencies.
 
 RADiQL enables and promotes an ultra-agile approach to software 
 development by focussing on the essencial value delivered by a software
 system. Namely:
 
-- The Data Entities used by the system
-- The User Stories (or Use Cases) that manipulate Data Entities
+- The Domain Entities used by the system
+- The User Stories (or Use Cases) that manipulate Domain Entities
 
-Data Entities and User Stories/Use Cases are treated as the 
+Domain Entities and User Stories/Use Cases are treated as the 
 first class citizens by RADiQL. Frameworks, boiler-plate code,
 database technologies, messaging technologies and user interface
 technologies are treated as "bolt-on" implementation detail that 
 can be abstracted away. There is therefore no direct dependency on
-any underlying framework and therefore far less code to write 
+any underlying software framework and therefore far less code to write 
 and test.
+
+RADiQL accelerates the process of understanding, designing and building
+domain-driven lo-code / no-code software through automation based
+upon publically-available ontologies that define domains of interest.
+In other words, much of the data model that a system will use may
+already have been analysed and built by third parties and formalised
+into an ontology. An application or service designer can reused and
+leverage this knowledge and easily augment it or customise it to create
+software without starting from scratch.
+
+A software designer can rapidly pick and choose domain entities and
+attributes of interest from ontologies for a particular vertical 
+market or area of academic or professional expertise.
+RADiQL can also leverage custom domain models that may or may not 
+reference publically-available ontologies.
+
+Note that Clean Architecture focusses on how best to deliver
+the essential value provided by a system. RADiQL uses ontologies 
+and data models to concentrate effort on rapid delivery of essential 
+value without getting lost in the implementation-specific details 
+of programming languages, software architectures, user interface 
+technologies or data-persistence technologies. Essential value
+is a timeless concept, where as the implementation-specific details
+and technologies will change over time.
 
 ## Pure Data and Pure Business Logic (First Class Citizens)
 
