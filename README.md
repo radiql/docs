@@ -61,24 +61,24 @@ RADiQL accelarates software delivery by reusing knowledge about
 domain entities, including actions performed on or by these
 domain entities and the transformations of data that are involved.
 
-RADiQL reuses timeless knowledge about software does and solutions for 
-achieving these goals in order to build reusable software rapidly. 
+RADiQL reuses timeless knowledge about what software does and solutions for 
+achieving these design goals in order to build reusable software rapidly. 
 RADiQL doesn't obsess about language-specific implementation or 
 frameworks since these languages and frameworks come and go or 
 limit future/backwards compatibility and therefore, by implication, 
 deliver limited lasting and fundamental value. 
 
-In any case
+In any case,
 virtualisation, containerization, service-oriented architecture and
 microservice architectures change how we think about implementing,
 building and integrating software with different programming languages,
 platforms, frameworks and deployment models. More and more we're
 being forced to consider functionality and the data model as more 
-important than the underlyhing implementation technology selected
-to implement software components. RADiQL merely focusses on meeting
+important than the underlying implementation technology selected
+to realise software components. RADiQL merely focusses on meeting
 this these new challenges better than traditional tools that, by 
 necessity, require far more human involvement and expense, both in 
-terms of time and money.
+terms of time, money and lost opportunity.
 
 ## Pure Data and Pure Business Logic (First Class Citizens)
 
