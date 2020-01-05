@@ -20,6 +20,7 @@ evolution
 - all software can be recreated cheaply as new technology, frameworks
 and platforms come to market.
 
+
 # About RADiQL and Ultra Agile
 
 RADiQL is a conceptual framework that combines the following:
@@ -42,7 +43,96 @@ In other words, RADiQL draws together the fruits of decades of
 knowledge, experience and wisdom in the field of designing complex
 information systems into a conceptual framework that underpins a
 simple, practical, ultra-agile approach to building such systems 
-via user stories and use cases with minimal external dependencies.
+via knowledge capture in ontologies, user stories and use cases, 
+collaborative working and extensive automation.
+
+## How RADiQL differs from conventional Agile
+
+Conventional Agile software development (at least as it's usually practiced)
+splits work on larger enterprise across multiple software development teams.
+Each team focusses on delivery of the epics and stories that are its 
+responsibility to deliver. Although there may be (and usually is) communication
+between team - including through meetings such as a "scrum of scrums" - there
+is a tendendcy for most members of the team to lose sight of the "bigger picture".
+
+RADiQL starts from a different perspective: an overall enterprise business
+model and creating descriptions of how everything within the context of the
+business (or organisation) is related to each other and how these things
+interact. Knowledge capture and retention in a codified and expressive form
+is key to the way that RADiQL works.
+
+Conventional Agile software development tends to involve human programmers 
+and testers writing a great deal of code and a there's typically a heavy 
+emphasis on test-driven development or behaviour-driven development. This 
+is necessary because the "requirements" of the system are expressed loosely
+in user stories (or use cases) and its necessary to codify the requirements
+in the form of test cases.
+
+RADiQL, on the other hand, starts from knowledge being captured in the form
+of ontologies. Some of these ontologies capture knowledge about the outside 
+world. Some of these ontologies capture knowledge about the business or 
+organisation and the way it works. Other ontologies capture information
+about how to map business and real-world concepts (expressed as an 
+ontology) and business process definitions and specificaiton into a network 
+of collaborative nanoservices that implement software functionality and 
+build system tasks. 
+
+This approach vastly reduces the need for hand-crafted code and
+the necessary testing, debugging and maintenance that goes along with it.
+So while TDD and BDD are both practiced within a RADiQL environment, they are
+necessary only when and where new nanoservice components need to be created.
+Typically, therefore, between 70 and 95% of code is reused from one RADiQL 
+project to the next. Automated assembly of nanoservice components greatly
+reduces risk and project costs while greatly enhancing software quality
+when compared with conventional Agile software development, where software
+development by human members of the team plays such an important and central
+role.
+
+RADiQL takes an industrial approach to manufacturing software systems from 
+an extensive knowledge base (and publically available research and software
+implementation strategies expressed in ontologies) rather than relying on 
+the work of (hopefully) skilled artesan programmers.
+
+## How RADiQL differs from conventional RAD
+
+Critisims of conventional Rapid Application Development often include:
+
+- The risk of a new approach and new tools
+- Lack of emphasis on non-functional requirements due to lack of visibility
+during development
+- Requires time of subject matter experts who may be scarce due to the 
+need for them to be available to deal with day-to-day business responsibilities.
+This may be more serious if general purpose developers with little or no domain
+knowledge are trying to interact (and consume the valuable time of) the subject
+matter expert.
+- Less control of and discipline during the development process. The flexiblity 
+of a RAD approach may prove costly in terms of the technical debt it may incur 
+and the lack of adherence to standards. RAD has often been used in so-called
+"End User Computing" teams to "knock up" quick apps for business users that are
+effectively become "throw-away" software due to their lack of engineering and
+future-proofing.
+- Poor design due to solutions being quickly prototyped and "hacked together"
+as quickliy as possible.
+- Lack of scalability due to non-functional requirements being ignored and/or
+the limited scope of the software and the difficulty of expanding its functionality.
+Many RAD application tools were designed for 2 tier client-server computing or
+3 tier application server computing with a thick client (a desktop application,
+for example). These types of application tend not to scale well, in practice, 
+for a number of reasons and often incur significant maintenance costs going
+forward.
+
+RADiQL uses exisisting tools and technologies that have been around for over 
+a decade in production use. These are used in systems such as those at the
+very core of Google's search services, the most used services in the world 
+today.
+
+RADiQL places a heavy emphasis on knowledge capture and, more importantly, 
+re-use of knowledge. Ontologies already exist for many vertical markets and
+academic, professional and economic disciplines. There is, therefore, probably an
+ontology out there that already captures much or most of the knowledge required
+to build an application. Organisation-specific ontologies only need to add
+organisation-specific knowledge to the more generic vertical market ontologies
+that they reference. In other words, the organisation-
 
 ## Delivery of Essential Value
 
