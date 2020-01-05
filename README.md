@@ -1,12 +1,41 @@
 # RADiQL Documentation
 This repository contains the official RADiQL documentation set.
 
+# RADiQL Objectives
+
+The primary goal of the RADiQL approach is to maximise the delivery of
+business and organisational value with minimal effort and resources.
+
+The mantra of RADiQL is: *"Minimal Output, Maximum Outcomes"*.
+
+In practice this means:
+
+- rapid delivery of working software with minimal human involvement.
+This minimises defects, costs, unnecessary testing and time to market.
+- maximimal reuse of high quality software componentry (either open 
+source or closed source)
+- knowledge capture and retention for continual future reuse and
+evolution
+- no hard-wired dependencies on any particular technology
+- all software can be recreated cheaply as new technology, frameworks
+and platforms come to market.
+
 # About RADiQL and Ultra Agile
 
-RADiQL is a toolset that combines Rapid Application Development with 
-Flow-based Programming (J. Paul Morrison), Clean Architecture
-(Robert C. Martin), Domain-driven Design (Eric Evans) and specifically
-Ontology-based Domain-driven Design (Pavel Hruby).
+RADiQL is a conceptual framework that combines the following:
+
+- Rapid Application Development with Flow-based Programming (J. Paul Morrison)
+- Clean Architecture (Robert C. Martin)
+- Domain-driven Design (Eric Evans)
+- Data Centric Design (Dave McComb)
+- Hypothesis-driven Delivery and Lean UX (Jeff Gothelf)
+- Impact Mapping - Gojko Adzic
+
+Other Influences include: 
+
+- concepts from Model-driven Design using Business Patterns (Pavel Hruby)
+- concepts from Ontology-based Domain Driven Design (Pavel Hruby)
+- User Research
 
 In other words, RADiQL draws together the fruits of decades of 
 knowledge, experience and wisdom in the field of designing complex
@@ -14,15 +43,22 @@ information systems into a conceptual framework that underpins a
 simple, practical, ultra-agile approach to building such systems 
 via user stories and use cases with minimal external dependencies.
 
+## Delivery of Essential Value
+
 RADiQL enables and promotes an ultra-agile approach to software 
 development by focussing on the essencial value delivered by a software
 system. Namely:
 
-- The Domain Entities used by the system
-- The User Stories (or Use Cases) that manipulate Domain Entities
+- timeless yet evolving models of business and organisational knowledge
+that are of lasting value and that are used to automate software delivery
+with little or no further human involvement
+- cheap and rapid experimentation to incrementally and continuously 
+deliver new value rapidly, at low risk and at low cost
+- a shared vocabulary that can be used to drastically lower integration
+costs and maximise business and organisational agility.
 
-Domain Entities and User Stories/Use Cases are treated as the 
-first class citizens by RADiQL. Frameworks, boiler-plate code,
+Domain Entities (Things) and User Stories/Use Cases (Processes) are 
+treated as the  first class citizens by RADiQL. Frameworks, boiler-plate code,
 database technologies, messaging technologies and user interface
 technologies are treated as "bolt-on" implementation detail that 
 can be abstracted away. There is therefore no direct dependency on
@@ -43,6 +79,8 @@ attributes of interest from ontologies for a particular vertical
 market or area of academic or professional expertise.
 RADiQL can also leverage custom domain models that may or may not 
 reference publically-available ontologies.
+
+## Clean Architecture
 
 Note that Clean Architecture implicitly focusses on how best to 
 cost-effectivly deliver the essential value provided by a system with
@@ -79,6 +117,23 @@ to realise software components. RADiQL merely focusses on meeting
 this these new challenges better than traditional tools that, by 
 necessity, require far more human involvement and expense, both in 
 terms of time, money and lost opportunity.
+
+## No Source Code
+
+RADiQL itself doesn't depend on any particular programming language,
+operating system or database product. Software may be implemented in
+any language, in whatever framework and on whatever operating system.
+
+RADiQL concepts are defined in an abstract form using the non-proprietary
+and fully open source [Resource Description Framework (RDF)](https://www.w3.org/RDF/)
+and related semantic web technologies. These include:
+
+- [RDF Schema (RDFS)](https://www.w3.org/TR/rdf-schema/)
+- [Web Ontology Language (OWL)](https://www.w3.org/OWL/)
+- [SPARQL 1.1 Query Langauge](https://www.w3.org/TR/sparql11-query/)
+and 
+- [Shapes Constraint Language (SHACL)](https://www.w3.org/TR/shacl/)
+
 
 ## Pure Data and Pure Business Logic (First Class Citizens)
 
@@ -326,6 +381,25 @@ Furthermore, the adoption of RADiQL ensures:
 
 RADiQL is designed for easy deployment into a cloud using Docker, Kubernetes 
 and a distributed data centre operating system such as Mesosphere DC/OS.
+
+Free Downloadable Tools
+
+AppStratum provides a useful extension for Visual Studio Code to help develop and test RADiQL software components in the Go programming language.
+
+# Implementations of RADiQL
+
+A commercial implementation of RADiQL is provided by AppStratum Harmony. Harmony provides the following services to users of the RADiQL approach:
+
+- A one-stop shop for fully versioned knowledge capture, information modelling and business rules definition
+- A one-stop shop for building and deploying RADiQL applications in the Cloud
+- An app store for business and government applications
+- Managed graph database services
+- Integration with GitHub 
+- Integration with Atlassian Cloud
+
+AppStratum Harmony is implemented in the Go programming language and is designed to fully exploit the latest generation of multicore CPUs from Intel and AMD.
+
+
 
 
 
