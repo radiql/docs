@@ -24,12 +24,13 @@ and platforms come to market.
 
 RADiQL is a conceptual framework that combines the following:
 
-- Rapid Application Development with Flow-based Programming (J. Paul Morrison)
-- Clean Architecture (Robert C. Martin)
-- Domain-driven Design (Eric Evans)
-- Data Centric Design (Dave McComb)
-- Hypothesis-driven Delivery and Lean UX (Jeff Gothelf)
-- Impact Mapping - Gojko Adzic
+- [Rapid Application Development](https://en.wikipedia.org/wiki/Rapid_application_development)
+- [Flow-based Programming (J. Paul Morrison)](https://jpaulm.github.io/fbp/)
+- [Clean Architecture (Robert C. Martin)](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
+- [Domain-driven Design (Eric Evans)](https://en.wikipedia.org/wiki/Domain-driven_design)
+- [Data Centric Design (Dave McComb)](http://www.brcommunity.com/articles.php?id=b972)
+- [Hypothesis-driven Delivery and Lean UX (Jeff Gothelf)](https://www.interaction-design.org/literature/article/a-simple-introduction-to-lean-ux)
+- [Impact Mapping - Gojko Adzic](https://www.impactmapping.org/)
 
 Other Influences include: 
 
