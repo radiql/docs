@@ -132,7 +132,9 @@ academic, professional and economic disciplines. There is, therefore, probably a
 ontology out there that already captures much or most of the knowledge required
 to build an application. Organisation-specific ontologies only need to add
 organisation-specific knowledge to the more generic vertical market ontologies
-that they reference. In other words, the organisation-
+that they reference. In other words, the organisation-specific customisations
+that override or enhance a generic ontology for the organisation's specific 
+purposes.
 
 ## Delivery of Essential Value
 
