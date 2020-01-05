@@ -275,7 +275,28 @@ FBP permits developers to flip between a visual graphical view of an application
 and code, depending on which view of the system is more natural and thus, more
 productive.
 
-## Creating components with a text editor
+## Nanoservices
+
+Functionality in RADiQL is implemented in the form of Nanoservices. Nanoservices
+implement features, tasks or processes and can be packaged individually or 
+collectively as microservices or monolithic executable applications as desired.
+Nanoservices may be colocated in the same microservice or monolithic application
+or distributed across multiple microservices or applications, as non-functional
+requirements dictate.
+
+Nanoservices may be defined in any language and are designed to permit integration
+into a flow-based programming network. They can be open source, closed source, 
+commercial offerings or free to use.
+
+Metadata for nanoservices is defined using the RADiQL nanoservice ontology. This 
+is open source and free to use, including for commercial use. 
+
+Nanoservices described using the RADiQL nanoservice ontology are automatically 
+discoverable by RADiQL tools and services. They can be used as components in
+authoring tools and automatically discovered, assembled and built into an
+executable for deployment.
+
+## Creating nanoservice components with a text editor
 
 RADiQL encourages the use of a text editor when writing an application-specific
 Interactor in a suitable programming language. The suitability of the language 
