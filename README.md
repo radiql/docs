@@ -26,6 +26,7 @@ and platforms come to market.
 RADiQL is a conceptual framework that combines the following:
 
 - [Rapid Application Development](https://en.wikipedia.org/wiki/Rapid_application_development)
+- [Communicating Sequential Processes (Tony Hoare et al)](https://en.wikipedia.org/wiki/Communicating_sequential_processes)
 - [Flow-based Programming (J. Paul Morrison)](https://jpaulm.github.io/fbp/)
 - [Clean Architecture (Robert C. Martin)](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
 - [Domain-driven Design (Eric Evans)](https://en.wikipedia.org/wiki/Domain-driven_design)
@@ -181,9 +182,9 @@ deployable into scalable microservices that can be replicated at web
 scale in the cloud. Furthermore, the baked-in support for the flow-based
 programming paradigm means that concurrent processing support is of the
 highest order, permitting full exploitation of the parallel processing 
-capabilities of the latest generation of multi-core CPUs. Concurrent 
-sequential processing (CSP) is the bedrock on which nanoservices are
-based.
+capabilities of the latest generation of multi-core CPUs. The principles of
+Communicating sequential processing (CSP) and Flow-based programming (FBP)
+is the bedrock on which nanoservices are based.
 
 ## Delivery of Essential Value
 
