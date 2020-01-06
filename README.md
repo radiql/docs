@@ -33,6 +33,7 @@ RADiQL is a conceptual framework that combines the following:
 - [Data Centric Design (Dave McComb)](http://www.brcommunity.com/articles.php?id=b972)
 - [Hypothesis-driven Delivery and Lean UX (Jeff Gothelf)](https://www.interaction-design.org/literature/article/a-simple-introduction-to-lean-ux)
 - [Impact Mapping - Gojko Adzic](https://www.impactmapping.org/)
+- [Normalized Systems Theory (NST - Herwig Mannaert, Jan Verelst, Peter De Bruyn)](https://ieeexplore.ieee.org/abstract/document/6759187/references#references)
 
 Other Influences include: 
 
