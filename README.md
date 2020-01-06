@@ -52,8 +52,13 @@ Conventional Agile software development (at least as it's usually practiced)
 splits work on larger enterprise across multiple software development teams.
 Each team focusses on delivery of the epics and stories that are its 
 responsibility to deliver. Although there may be (and usually is) communication
-between team - including through meetings such as a "scrum of scrums" - there
+between teams - including through meetings such as a "scrum of scrums" - there
 is a tendendcy for most members of the team to lose sight of the "bigger picture".
+They're focussed on the lower level artefacts that their own team is to deliver
+from stories, sub-stories and individual tasks. Building the potential for
+easy reuse rarely figures in this process. The objective is simply to write
+the minimum amount of code to meet the requirement of the current story at
+hand and no more than that.
 
 RADiQL starts from a different perspective: an overall enterprise business
 model and creating descriptions of how everything within the context of the
@@ -70,17 +75,22 @@ in the form of test cases.
 
 RADiQL, on the other hand, starts from knowledge being captured in the form
 of ontologies. Some of these ontologies capture knowledge about the outside 
-world. Some of these ontologies capture knowledge about the business or 
-organisation and the way it works. Other ontologies capture information
-about how to map business and real-world concepts (expressed as an 
-ontology) and business process definitions and specificaiton into a network 
-of collaborative nanoservices that implement software functionality and 
-build system tasks. 
+world. Some of these ontologies - high level enterprise ontologies - capture 
+more abstract knowledge about the business or organisation and the way it works. 
+Story ontologies capture more detail and  knowledge about how to map these 
+more abstract business and real-world concepts into a network of collaborative 
+nanoservices that actually implement software functionality and build system tasks. 
+Nanoservices are lower level reusable story component implementations that 
+are described by their own ontologies. This is a layered higherarchy of
+ontologies where the lower level "detailed" ontologies reference and import 
+concepts from the higher level "abstract" ontologies.
 
-This approach vastly reduces the need for hand-crafted code and
-the necessary testing, debugging and maintenance that goes along with it.
-So while TDD and BDD are both practiced within a RADiQL environment, they are
-necessary only when and where new nanoservice components need to be created.
+This approach - which embodies reusability right at its core - vastly reduces 
+the need for hand-crafted code and the necessary testing, debugging and maintenance 
+that goes along with it. So while TDD and BDD are both practiced within a 
+RADiQL environment, they are necessary only when and where new nanoservice 
+components need to be created.
+
 Typically, therefore, between 70 and 95% of code is reused from one RADiQL 
 project to the next. Automated assembly of nanoservice components greatly
 reduces risk and project costs while greatly enhancing software quality
@@ -91,7 +101,8 @@ role.
 RADiQL takes an industrial approach to manufacturing software systems from 
 an extensive knowledge base (and publically available research and software
 implementation strategies expressed in ontologies) rather than relying on 
-the work of (hopefully) skilled artesan programmers.
+the work of (hopefully) skilled artesan programmers to write software from
+scratch.
 
 ## How RADiQL differs from conventional RAD
 
@@ -123,8 +134,8 @@ forward.
 
 RADiQL uses exisisting tools and technologies that have been around for over 
 a decade in production use. These are used in systems such as those at the
-very core of Google's search services, the most used services in the world 
-today.
+very core of Google's search services, the most used and reliable services 
+in the world today.
 
 RADiQL places a heavy emphasis on knowledge capture and, more importantly, 
 re-use of knowledge. Ontologies already exist for many vertical markets and
@@ -134,7 +145,45 @@ to build an application. Organisation-specific ontologies only need to add
 organisation-specific knowledge to the more generic vertical market ontologies
 that they reference. In other words, the organisation-specific customisations
 that override or enhance a generic ontology for the organisation's specific 
-purposes.
+purposes. Reuse of the knowledge that has already been captured in ontologies
+greatly reduces the pressure to take valuable time from subject matter experts.
+Furthermore, knowledge that is gathered from such subject matter experts is
+immediately codified into an enterprise business ontology for reuse in the 
+future.
+
+RADiQL places great emphasis on control during the development process, but 
+uses a type of Arteficial Intelligence  in the form of automated reasoning 
+to verify the consistency and correctness of the enterprise business model 
+and capture of business rules in a precise, progressively more detailed, form.
+The emphasis of RADiQL is on rapidly establishing and capturing 
+the enterprise business model (reusing generic knowledge from existing
+knowledge repositories) and generating visual artefacts from this rather than
+prototyping user interfaces. RADiQL puts the correctness of data at the heart
+of its activities and treats user interface technology as a plugin framework
+in accordance with Clean Architecture principles. Furthermore, Machine Learning
+(ML) can be applied to enhance productivity and reusability as part of this 
+process of mapping high-level business concepts to deliverable software as
+well as delivering excellent solutions to non-functional requirements.
+
+RADiQL is implemented with a Clean Architecture and Story-based (or Use Case
+based) Interactors (that are implemented as well-defined and self-documenting 
+composite nanoservices. There is nothing "hacked together" in this process.
+People work hand in hand with automated reasoners to ensure that the software
+is well designed, of high quality and of lasting value.
+
+With RADiQL, speed comes from automated re-use of knowledge captured in 
+knowledge respositories (external and internal) rather than quick "hacks"
+and a quick-but-shoddy "slap-dash" prototyping. Velocity is achieved through
+automation rather than by taking cheap-but-nasty shortcuts.
+
+With regard to scalability, RADiQL nanoservices are designed to be 
+deployable into scalable microservices that can be replicated at web 
+scale in the cloud. Furthermore, the baked-in support for the flow-based
+programming paradigm means that concurrent processing support is of the
+highest order, permitting full exploitation of the parallel processing 
+capabilities of the latest generation of multi-core CPUs. Concurrent 
+sequential processing (CSP) is the bedrock on which nanoservices are
+based.
 
 ## Delivery of Essential Value
 
