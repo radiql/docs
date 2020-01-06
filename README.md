@@ -54,7 +54,7 @@ splits work on larger enterprise across multiple software development teams.
 Each team focusses on delivery of the epics and stories that are its 
 responsibility to deliver. Although there may be (and usually is) communication
 between teams - including through meetings such as a "scrum of scrums" - there
-is a tendendcy for most members of the team to lose sight of the "bigger picture".
+is a tendency for most members of the team to lose sight of the "bigger picture".
 They're focussed on the lower level artefacts that their own team is to deliver
 from stories, sub-stories and individual tasks. Building the potential for
 easy reuse rarely figures in this process. The objective is simply to write
