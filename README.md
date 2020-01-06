@@ -226,7 +226,7 @@ reference publically-available ontologies.
 ## Clean Architecture
 
 Note that Clean Architecture implicitly focusses on how best to 
-cost-effectivly deliver the essential value provided by a system with
+cost-effectively deliver the essential value provided by a system with
 minimal human resources. RADiQL uses and reuses ontologies 
 and data models to concentrate effort on rapid delivery of essential 
 value without getting lost in the implementation-specific details 
@@ -257,7 +257,7 @@ platforms, frameworks and deployment models. More and more we're
 being forced to consider functionality and the data model as more 
 important than the underlying implementation technology selected
 to realise software components. RADiQL merely focusses on meeting
-this these new challenges better than traditional tools that, by 
+these new challenges better than traditional tools that, by 
 necessity, require far more human involvement and expense, both in 
 terms of time, money and lost opportunity.
 
@@ -287,7 +287,7 @@ On the other hand, Use Cases and User Stories define the **behaviour**
 of the system when receiving, processing or creating Data Entities. 
 
 The pure programmatic business logic of a Use Case or User Story is described 
-by an **Interactor**. Interactors implement the behaviour of the pure 
+by a story **Interactor**. Interactors implement the behaviour of the pure 
 business logic (and nothing more).
 
 Data Entities are passed between Interactors in
@@ -300,6 +300,10 @@ named Process(), which takes no input parameters and returns no result.
 Interactors are stateless and in themselves exhibit no side effects. This
 means that Interactors (and thus Use Case or User Story realizations) are
 easily testable.
+
+Interactors are packaged as Nanoservices. More complicated and significant 
+Story Interactors are almost always packaged as Composite Nanoservices: 
+Nanoservices than are implemented with other low-level Nanoservices.
 
 ## The Practical Fruits of Minimalism
 
@@ -320,15 +324,15 @@ Furthermore, the implementation technology of one or more Interactors may
 be changed entirely (from Java to Rust, let's say, or from JavaScript 
 to Golang) without any need to rewrite the test code for the essential
 business logic of the system. Indeed it's very straightforward to combine
-Interactors implemented with different technologies in the same system
-without changing the tests at all.
+Interactors (or compare!) implemented with different technologies in the 
+same system without changing the tests at all.
 
 The fruits of minimalism are business agility and flexibility. Less code
 to write means less code to test. In turn this leads to greater velocity
 of the development team. The team delivers business value more quickly 
 and more precisely. The business value is distilled into a limited number 
-of application-specific Interactors and Data Entity data structures. These
-relationships can be represented graphically. This makes the application 
+of application-specific Story Interactors and Data Entity data structures. 
+These relationships can be represented graphically. This makes the application 
 far easier to understand, to evolve and to maintain.
 
 It's important to appreciate the value of this minimalist approach. In 
@@ -368,9 +372,23 @@ connected by the application designer using message-based channels where
 output port of the sending Interactor uses exactly the same message type as 
 the input port of the receiving Interactor.
 
+In RADiQL, message types are derived from definitions of classes (types of
+Thing) in ontologies. Ontologies support a very flexible and extensive
+class hierarchy that permits individual Things to be treated differently in
+a different context. The object properties and data properties of each Thing
+are formally defined by an ontology and may be further refined and detailed
+by lower-level ontologies. The expressive ontology-based type system permits
+RADiQL tools to compute how message types can be infered in a given context.
+More importantly, deriving message types from an ontology permits RADiQL 
+tool to match and connect resuable Nanoservices, automatically creating
+interfaces and creating and injecting message type adapters between
+Nanoservices where necessary.
+
 This means, in effect, that both Interactors are forced to implement their
-interfaces by referencing a common message data type, thereby guaranteeing
-their compatibility. This makes it easy to "wire up" Interactor components.
+interfaces by referencing a common message data type or at least a compatible message
+type, thereby guaranteeing their compatibility. This, along with the automated
+support of creating and injecting message type adapters, makes it easy to 
+"wire up" Interactor components in an automated fashion.
 
 # Flow-based Programming (FBP) with RADiQL
 
