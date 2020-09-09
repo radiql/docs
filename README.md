@@ -121,7 +121,7 @@ matter expert.
 - Less control of and discipline during the development process. The flexiblity 
 of a RAD approach may prove costly in terms of the technical debt it may incur 
 and the lack of adherence to standards. RAD has often been used in so-called
-"End User Computing" teams to "knock up" quick apps for business users that are
+"End User Computing" teams to "knock up" quick apps for business users that
 effectively become "throw-away" software due to their lack of engineering and
 future-proofing.
 - Poor design due to solutions being quickly prototyped and "hacked together"
