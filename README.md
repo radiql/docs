@@ -154,7 +154,7 @@ immediately codified into an enterprise business ontology for reuse in the
 future.
 
 RADiQL places great emphasis on control during the development process, but 
-uses a type of Arteficial Intelligence  in the form of automated reasoning 
+uses a type of Artificial Intelligence  in the form of automated reasoning 
 to verify the consistency and correctness of the enterprise business model 
 and capture of business rules in a precise, progressively more detailed, form.
 The emphasis of RADiQL is on rapidly establishing and capturing 
