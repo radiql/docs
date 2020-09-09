@@ -567,7 +567,7 @@ and a distributed data centre operating system such as Mesosphere DC/OS.
 
 Free Downloadable Tools
 
-AppStratum provides a useful extension for Visual Studio Code to help develop and test RADiQL software components in the Go programming language.
+AppStratum provides a useful extension for Visual Studio Code to help develop and test RADiQL software components in the Rust programming language.
 
 # Implementations of RADiQL
 
@@ -580,7 +580,7 @@ A commercial implementation of RADiQL is provided by AppStratum Harmony. Harmony
 - Integration with GitHub 
 - Integration with Atlassian Cloud
 
-AppStratum Harmony is implemented in the Go programming language and is designed to fully exploit the latest generation of multicore CPUs from Intel and AMD.
+AppStratum Harmony is implemented in the Rust programming language and is designed to fully exploit the latest generation of multicore CPUs from Intel and AMD.
 
 
 
