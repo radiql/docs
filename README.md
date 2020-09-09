@@ -6,7 +6,7 @@ This repository contains the official RADiQL documentation set.
 The primary goal of the RADiQL approach is to maximise the delivery of
 business and organisational value with minimal effort and resources.
 
-The mantra of RADiQL is: *"Minimal Output, Maximum Outcomes"*.
+The mantra of RADiQL is: *"Minimal Output, Maximum Outcomes"* (MOMO).
 
 In practice this means:
 
