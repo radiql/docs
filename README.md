@@ -211,7 +211,7 @@ and test.
 
 RADiQL accelerates the process of understanding, designing and building
 domain-driven lo-code / no-code software through automation based
-upon publically-available ontologies that define domains of interest.
+upon publicly-available ontologies that define domains of interest.
 In other words, much of the data model that a system will use may
 already have been analysed and built by third parties and formalised
 into an ontology. An application or service designer can reuse and
@@ -222,7 +222,7 @@ A software designer can rapidly pick and choose domain entities and
 attributes of interest from ontologies for a particular vertical 
 market or area of academic or professional expertise.
 RADiQL can also leverage custom domain models that may or may not 
-reference publically-available ontologies.
+reference publicly-available ontologies.
 
 ## Clean Architecture
 
