@@ -101,7 +101,7 @@ development by human members of the team plays such an important and central
 role.
 
 RADiQL takes an industrial approach to manufacturing software systems from 
-an extensive knowledge base (and publically available research and software
+an extensive knowledge base (and publicly available research and software
 implementation strategies expressed in ontologies) rather than relying on 
 the work of (hopefully) skilled artesan programmers to write inevitably
 more defect-prone software from scratch.
